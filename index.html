@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Lab: Pixel Art Maker</h1>
+
+    <h2>Choose Grid Size</h2>
+    <form id="sizePicker">
+        Grid Height:
+        <input type="number" id="input_height" name="height" min="1" max="100" value="15">
+        Grid Width:
+        <input type="number" id="input_width" name="width" min="1" max="100" value="15">
+        <input type="submit">
+    </form>
+
+    <div id="color_picker">
+        <h2>Pick Colors</h2>
+
+        Primary:
+        <input type="color" id="primaryColorPicker" title="Pick primary color" class="colorPickerButton">
+
+        Secondary:
+        <input type="color" id="secondaryColorPicker" value="#00ff00" title="Pick secondary color" class="colorPickerButton">
+
+        Eraser:
+        <input type="color" id="eraserColorPicker" value="#ffffff" title="Pick eraser color" class="colorPickerButton">
+    
+    </div>
+
+    <div class="container">
+
+         <section class="instructions">
+            <h2>Instructions</h2>
+
+
+             <ul>
+                <li>ctrl + z/y to undo/redo</li>
+                <li>left mouse button to draw</li>
+                <li>right mouse button to erase</li>
+                <li>hold control key while drawing to use the secondary color</li>
+                <li>pick a fill color and press filll > the eraser color will update automatically </li>
+                <li>there's a button to reset the cell colors, buttons to undo/redo and a button to remove grid</li>
+            </ul>
+        </section>
+
+        <section class="smallInstructions">
+
+        </section>
+
+        <section class="canvas_container">
+            <p class="design_header">Design Canvas</p>
+
+            <div id="tools">
+                <!-- <div id="fill_tools"> -->
+                    Fill color: <input type="color" id="fillColorPicker" value="#03b8fc" title="Pick fill color">
+                    
+                    <button type="button" id="fillButton" title="Fill">
+                        <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                    </button>
+                <!-- </div> -->
+                
+                <button type="button" id="resetCellsColor" class="function_button" title="Reset grid">
+                    <i class="fa fa-refresh" aria-hidden="true"></i>
+                </button>
+
+                <button type="button" id="toggleGrid" title="Toggle grid" class="function_button"><i class="fa fa-th-large" aria-hidden="true"></i></button>
+
+                <button type="button" id="undoButton" title="Undo" class="function_button">
+                    <i class="fa fa-undo" aria-hidden="true"></i>
+                </button>
+
+                <button type="button" id="redoButton" title="Redo" class="function_button">
+                    <i class="fa fa-repeat" aria-hidden="true"></i>
+                </button>
+
+            </div>
+
+            <table id="pixel_canvas">
+
+            </table>
+        </section>
+
+        
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="designs.js"></script>
+
+</body>
+</html>

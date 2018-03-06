@@ -1,0 +1,115 @@
+body {
+    text-align: center;
+    margin: 0;
+    background: rgb(158, 240, 51);
+    background: -webkit-linear-gradient(53deg, rgba(160,255,71,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
+}
+
+h1 {
+    font-family: Monoton, sans-serif;
+    font-size: 70px;
+    margin: 0.2em;
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+#color_picker {
+    margin: 20px 0 50px 0;
+
+}
+
+.container {
+    display:flex;
+    flex-wrap: wrap;
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+    
+.instructions {
+    flex-basis: 30%;
+    background-color: rgb(241, 174, 57);
+    border: 2px solid rgb(158, 76, 0);
+    font-style: italic;
+    /* height: 400px; */
+    /* margin: 0 50px 30px 20px;  */
+}
+
+.smallInstructions {
+    /* display: none; */
+    flex-basis: 5px;
+    background-color: rgb(241, 174, 57);
+    border: 1px solid rgb(158, 76, 0);
+    margin: 0;
+    padding: 0;
+
+}
+
+.canvas_container {
+    display: flex;
+    flex-basis: 65%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pixel_canvas {
+    border-collapse: collapse;
+    border: 1px solid grey;
+    box-shadow: 5px 5px 5px 0 rgb(59, 30, 48);
+    margin-bottom: 50px;
+}
+
+/* #tools {
+    flex-basis: 100%;
+    justify-content: flex-start;
+} */
+
+ul {
+    text-align: left;
+    font-size: 1.2em;
+}
+
+li {
+    margin: 10px;
+}
+
+.function_button {
+    width: 2em;
+    height: 2em;
+    font-size: 1em;
+    margin: 0 1px;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+    background-color: white;
+}
+
+.cellBorders {
+    border: 1px solid black;
+}
+
+input[type=number] {
+    width: 6em;
+}
+
+.colorPickerButton {
+    margin: 0 3em 1em 0;
+}
+
+.design_header {
+    font-family: 'Great Vibes', cursive, serif;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
