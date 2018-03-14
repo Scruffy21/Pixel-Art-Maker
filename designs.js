@@ -30,6 +30,17 @@ function makeGrid() {
     }
 }
 
+//listener to open/close instructions
+const instr = $(".instr-toggle")[0];
+// console.log(instr);
+// 
+
+const instrCont = $(".instructions-cont")[0];
+$(instr).click(function () {
+    console.log("clicked");
+    $(instrCont).toggleClass("instr-show");
+});
+
 // fills all cells with a color
 function fillAll (color) {
     let allCells = $("#pixel_canvas td");
