@@ -1,8 +1,9 @@
 body {
     text-align: center;
     margin: 0;
-    background: rgb(158, 240, 51);
-    background: -webkit-linear-gradient(53deg, rgba(160,255,71,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
+    background: rgba(0,128,128,1) 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1 {
@@ -39,7 +40,7 @@ main {
     transform: translateX(-440px);
     left: 20px;
     top: 30vh;
-    background-color: rgb(241, 174, 57);
+    background-color: #e8de78;
     border: 2px solid rgb(158, 76, 0);
     border-radius: 25px;
     font-style: italic;
@@ -90,7 +91,6 @@ main {
 #pixel_canvas {
     border-collapse: collapse;
     border: 1px solid grey;
-    box-shadow: 5px 5px 5px 0 rgb(59, 30, 48);
     margin-bottom: 50px;
 }
 
@@ -121,6 +121,7 @@ tr {
 
 td {
     width: 20px;
+    /* height: 20px; */
     background-color: white;
     cursor: pointer;
 }
@@ -137,9 +138,13 @@ input[type=number] {
     margin: 0 3em 1em 0;
 }
 
+#fillButton {
+    margin-right: 15px;
+}
+
 .design_header {
-    font-family: 'Great Vibes', cursive, serif;
-    font-size: 50px;
-    margin: 0;
+    font-family: 'Itim', cursive, serif;
+    font-size: 2em;
+    margin: 5px 0;
     padding: 0;
 }
