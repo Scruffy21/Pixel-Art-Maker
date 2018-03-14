@@ -1,7 +1,7 @@
 body {
     text-align: center;
     margin: 0;
-    background: rgba(0,128,128,1) 100%;
+    background: #00a9a9;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -41,7 +41,7 @@ main {
     left: 20px;
     top: 30vh;
     background-color: #e8de78;
-    border: 2px solid rgb(158, 76, 0);
+    border: 1px solid rgb(158, 76, 0);
     border-radius: 25px;
     font-style: italic;
     max-width: 450px;
@@ -147,4 +147,14 @@ input[type=number] {
     font-size: 2em;
     margin: 5px 0;
     padding: 0;
+}
+
+footer {
+    background: purple;
+    border-top: 1px solid;
+}
+
+footer a {
+    color: inherit;
+    /* text-decoration: none; */
 }
