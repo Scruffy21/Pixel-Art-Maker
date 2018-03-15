@@ -5,6 +5,7 @@ const primary_color = document.getElementById("primaryColorPicker");
 const secondary_color = document.getElementById("secondaryColorPicker");
 const eraser_color = document.getElementById("eraserColorPicker");
 const fill_input = $("#fillColorPicker");
+let fillColor = "#0000ff";
 const reset_button = $("#resetCellsColor");
 let isDown = false; // whether the mouse button is pressed
 let log = []; // stores all the operations that take place on the grid, to allow users to undo/redo their actions
