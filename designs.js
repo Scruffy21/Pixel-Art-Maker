@@ -248,14 +248,14 @@ myTable.on("mousedown", "td", function(event) {
                 tool = "second_pen";
                 //only log a color change if cell color changes.
                 if (toRgb(secondary_color.value) !== prevColor) {
-                    log.push(new logCellChange(cellToChange, prevColor, primary_color.value,));
+                    log.push(new logCellChange(cellToChange, prevColor, primary_color.value));
                 }
             }
             else {
                 $(cellToChange).css("background-color", primary_color.value);
                 tool = "first_pen";
                 if (toRgb(primary_color.value) !== prevColor) {
-                    log.push(new logCellChange(cellToChange, prevColor, primary_color.value,));
+                    log.push(new logCellChange(cellToChange, prevColor, primary_color.value));
                 }
             }
             break;
@@ -264,7 +264,7 @@ myTable.on("mousedown", "td", function(event) {
             $(cellToChange).css("background-color", eraser_color.value);
             tool = "eraser";
             if (toRgb(eraser_color.value) !== prevColor) {
-                log.push(new logCellChange(cellToChange, prevColor, primary_color.value,));
+                log.push(new logCellChange(cellToChange, prevColor, primary_color.value));
             }
             break;
     }
@@ -289,13 +289,13 @@ myTable.on("mouseenter", "td", function(event) {
         if (tool === "first_pen") {
             $(cellToChange).css("background-color", primary_color.value)
             if (toRgb(primary_color.value) !== prevColor) {
-                log.push(new logCellChange(cellToChange, prevColor, primary_color.value,));
+                log.push(new logCellChange(cellToChange, prevColor, primary_color.value));
             }
         }
         else if (tool === "second_pen") {
             $(cellToChange).css("background-color", secondary_color.value)
             if (toRgb(secondary_color.value) !== prevColor) {     
-                log.push(new logCellChange(cellToChange, prevColor, secondary_color.value,));
+                log.push(new logCellChange(cellToChange, prevColor, secondary_color.value));
             }
         }
         else {
