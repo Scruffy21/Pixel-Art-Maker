@@ -215,8 +215,8 @@ $("#toggleGrid").on("click", function() {
     $("td").toggleClass("cellBorders");
 });
 
-$("#undoButton").on("pointerdown pointerup", function (e) {
-    if (e.type === "pointerdown") {
+$("#undoButton").on("mousedown mouseup", function (e) {
+    if (e.type === "mousedown") {
         undoInterval = setInterval(undo, 10);
     }
     else {
@@ -224,8 +224,8 @@ $("#undoButton").on("pointerdown pointerup", function (e) {
     }
 });
 
-$("#redoButton").on("pointerdown pointerup", function (e) {
-    if (e.type === "pointerdown") {
+$("#redoButton").on("mousedown mouseup", function (e) {
+    if (e.type === "mousedown") {
         redoInterval = setInterval(redo, 10);
     }
     else {
