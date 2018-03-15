@@ -194,9 +194,13 @@ footer a {
 }
 
 .author {
-    color: #cabe47;
+    color: #d3c436;
 }
 
-.source {
-    color: #2424a2;
+.author:hover {
+    color: #ffee48;
+}
+
+.source:hover {
+    color: #0000bf;
 }
