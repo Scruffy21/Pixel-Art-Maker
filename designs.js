@@ -1,4 +1,3 @@
-"use strict"
 const sizeForm = $("#sizePicker");
 const myTable = $("table#pixel_canvas");
 const primary_color = document.getElementById("primaryColorPicker");

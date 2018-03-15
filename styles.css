@@ -26,16 +26,25 @@ h2:first-of-type {
 }
 
 main {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex; 
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+        -ms-flex-direction: column; 
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
     
 .instructions-cont {
     position: fixed;
     /* left: 20px; */
-    transform: translateX(-440px);
+    -webkit-transform: translateX(-440px);
+        -ms-transform: translateX(-440px);
+            transform: translateX(-440px);
     left: 20px;
     top: 30vh;
     background-color: #e8de78;
@@ -46,6 +55,8 @@ main {
     text-align: initial;
     /* height: 400px; */
     /* margin: 0 50px 30px 20px;  */
+    -webkit-transition: all 0.8s;
+    -o-transition: all 0.8s;
     transition: all 0.8s;
 }
 
@@ -75,15 +86,21 @@ main {
 }
 
 .instr-show {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
 }
 
 .fa-arrow-circle-right {
+    -webkit-transition: all 0.8s;
+    -o-transition: all 0.8s;
     transition: all 0.8s;
 }
 
 .instr-show .fa-arrow-circle-right {
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
 
 #pixel_canvas {
@@ -148,9 +165,15 @@ input[type=number] {
 }
 
 footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: #00806e;
     border-top: 1px solid #b3ac6a;
     height: 60px;
