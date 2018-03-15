@@ -150,11 +150,32 @@ input[type=number] {
 }
 
 footer {
-    background: purple;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00806e;
     border-top: 1px solid;
+    min-height: 60px;
+}
+
+footer > * {
+    margin: 0 2em;
+}
+
+footer time {
+    font-style: italic;
+    font-size: 0.9em;
 }
 
 footer a {
     color: inherit;
-    /* text-decoration: none; */
+    text-decoration: none;
+}
+
+.author {
+    color: #cabe47;
+}
+
+.source {
+    color: #2424a2;
 }
